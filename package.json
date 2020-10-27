@@ -1,0 +1,19 @@
+{
+  "name": "json-server-mock-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npm-run-all -p marge-server json-server",
+    "marge-server": "node ./scripts/marge.js",
+    "json-server": "json-server --watch ./mock.json --port 5000 --middlewares ./scripts/plugin.js --routes ./routes.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.16.2",
+    "npm-run-all": "^4.1.5"
+  }
+}
